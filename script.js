@@ -18,6 +18,7 @@ function getHumanChoice(){
 let humanScore = 0;
 let computerScore = 0;
 
+
 function playRound(humanChoice, computerChoice){
     if (humanChoice === computerChoice){
         console.log(`It's a draw! you both chose ${humanChoice}`);
@@ -42,7 +43,19 @@ function playRound(humanChoice, computerChoice){
     }
 }
 
-const humanSelection = getHumanChoice().toLowerCase();
-const computerSelection = getComputerChoice();
+function playGame(){
+for(let i = 1; i <= 5; i++){
+    let humanSelection = getHumanChoice().toLowerCase();
+    let computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+}
+if (humanScore > computerScore) {
+    console.log(`You are the WINNER! your score: ${humanScore}, computer score: ${computerScore}`);
+} else if (computerScore > humanScore) {
+    console.log(`You have LOST! your score: ${humanScore}, computer score: ${computerScore}`);
+} else if (humanScore === computerScore){
+    console.log(`It's a DRAW! your score: ${humanScore}, computer score: ${computerScore}`);
+}
+}
 
-playRound(humanSelection, computerSelection);
+playGame();
