@@ -87,23 +87,6 @@ function displayUI() {
   scoreContainer.classList.remove('hidden');
 }
 
-// function playGame(){
-// for(let i = 1; i <= 5; i++){
-//     let humanSelection = getHumanChoice().toLowerCase();
-//     let computerSelection = getComputerChoice();
-//     playRound(humanSelection, computerSelection);
-// }
-// if (humanScore > computerScore) {
-//     console.log(`You are the WINNER! your score: ${humanScore}, computer score: ${computerScore}`);
-// } else if (computerScore > humanScore) {
-//     console.log(`You have LOST! your score: ${humanScore}, computer score: ${computerScore}`);
-// } else if (humanScore === computerScore){
-//     console.log(`It's a DRAW! your score: ${humanScore}, computer score: ${computerScore}`);
-// }
-// }
-
-// playGame();
-
 const rockBtn = document.querySelector('.btn-rock');
 const paperBtn = document.querySelector('.btn-paper');
 const scissorsBtn = document.querySelector('.btn-scissors');
